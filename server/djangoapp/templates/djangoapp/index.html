@@ -18,8 +18,13 @@
     <!--Add a nav bar here -->
         <header class="pb-5">
             <nav class=" navbar navbar-light" style="background-color: #a0d7ff;">
-                <a class=" navbar-brand" href="{% url 'djangoapp:index' %}">Best Cars</a>
-     
+                <a class="navbar-brand" href="{% url 'djangoapp:index' %}">Best Cars</a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" placeholder="Username">
+                    <input class="form-control mr-sm-2" placeholder="Password">
+                    <a role="button" class="btn btn-outline-success my-2 my-sm-0 mr-2" href="#link">Login</a>
+                    <a role="button" class="btn btn-outline-primary my-2 my-sm-0 mr-2" href="/djangoapp/registration">Sign Up</a>
+                </form>  
             </nav>
         </header>
         <!--Add a dealer table here -->
