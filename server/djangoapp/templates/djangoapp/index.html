@@ -14,12 +14,47 @@
 </head>
 
     <body>
-    <!-- Remove this line the first time you edit this file -->
-     This is the index page of your Django app!
+        
     <!--Add a nav bar here -->
-
-    <!--Add a dealer table here -->
-
-    </body>
+        <header class="pb-5">
+            <nav class=" navbar navbar-light" style="background-color: #a0d7ff;">
+                <a class=" navbar-brand" href="{% url 'djangoapp:index' %}">Best Cars</a>
+     
+            </nav>
+        </header>
+        <!--Add a dealer table here -->
+        <main role="main" class="container pt-3">
+            <table class="table" id="table" data-filter-control="true">
+                <thead>
+                    <tr>
+                        <th data-field="id">ID</th>
+                        <th data-field="full_name">Dealership Name</th>
+                        <th data-field="city">City</th>
+                        <th data-field="address">Address</th>
+                        <th data-field="zip">ZIP Code</th>
+                        <th data-field="state" data-filter-control="select">State</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </main>
+    
+        <!--Footer and navbar-->
+        <footer class=" navbar navbar-light fixed-bottom" style="background-color: #a0d7ff;">
+          <div class="container">
+            <a class="btn btn-sm btn-outline-info" type="button" href="{% url 'djangoapp:about' %}">About Us</a>
+            <a class="btn btn-sm btn-outline-info" type="button" href="{% url 'djangoapp:contact' %}">Contact Us</a>
+          </div>
+        </footer>
+        </body>
+    <script>
+      $(function() {
+        $('#table').bootstrapTable()
+      })
+      
+    </script>
 
 </html>
