@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "couchimport": "^1.5.5",
+    "global": "^4.4.0"
+  }
+}
